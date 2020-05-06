@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    color: red;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 0;
+}
+
+#header,
+#footer {
+    flex: 1 100%;
+}
+
+#header {
+    background-color: brown;
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    color: gold;
+}
+
+p {
+    color: grey;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#footer {
+    background-color: brown;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    color: gold;
+}
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    ;
+}
+
+.column {
+    flex-basis: 16.666%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0.2em;
+}
+
+.box {
+    height: 120px;
+    margin: 0.3em;
+    width: 140px;
+    border-radius: 5%;
+    background-size: cover;
+    font-size: 15px;
+    background-color: gold
+}
+
+img {
+    width: 140px;
+    height: auto;
+    background-color: rgb(4, 122, 158);
+    border-radius: 5% 5% 0% 0%;
+}
+
+@media screen and (max-width: 1024px) {
+    .column {
+        flex-basis: 16.666%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .column {
+        flex-basis: 100%;
+    }
+}
